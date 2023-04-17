@@ -41,6 +41,10 @@ body{
 .cards{
     display: flex;
 }
+img{
+    width: 230px;
+    height: 220px;
+}
 section{
     padding-top: 50px;
     
