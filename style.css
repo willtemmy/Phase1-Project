@@ -32,7 +32,7 @@ body{
     height: 300px;
     width: 300px;
     /* x,y,blur, color*/
-    box-shadow: 5px 10px 13px #000000;
+    box-shadow: 10px 10px 13px #3c0c0c;
     padding: 10px;
     display: block;
     text-align: center;
