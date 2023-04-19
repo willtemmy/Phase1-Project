@@ -7,17 +7,21 @@
     <title>Jokes</title>
     <script src="index.js" ></script>
     <link rel="stylesheet" href="style.css">
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <body>
     
     <div class="logo">
         <span class="jok">Joke</span><span class="gen">Generator</span>
      </div><br>
 
+     <form class="d-flex" role="search" id = "searchForm">
+        <input class="form-control me-2" type="search" id = "keyword" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" id ="search">Search</button>
+      </form>
+
 
      <div class="cards">
 	<div class="container">
-		<div class="card">
 			<img src="./img/prog.png" alt="programmer-pic">
 			<div>
                 <h2>Programming Joke</h2>
@@ -25,11 +29,9 @@
             <div class="bDiv">
                 <button class="buttonPro">Joke</button>
             </div>	
-		</div>
 	</div>
 
 	<div class="container">
-		<div class="card">
 			<img src="./img/pun.png" alt="pun-pic">
 			<div>
                 <h2>Pun Joke</h2>
@@ -37,11 +39,9 @@
             <div class="bDiv">
                 <button class="buttonPun">Joke</button>
             </div>	
-		</div>
 	</div>
 
 	<div class="container">
-		<div class="card">
 			<img src="./img/dark.png" alt="just-dark">
 			<div>
                 <h2>Dark Joke</h2>
@@ -49,7 +49,6 @@
             <div class="bDiv">
                 <button class="buttonDar">Joke</button>
             </div>	
-		</div>
 	</div>
 
     <div class="container">

@@ -56,7 +56,28 @@ function jokeRan(){
     })
 }
 
+searchForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const keyword = document.getElementById('keyword');
+    fetch("https://icanhazdadjoke.com/search?term=" + keyword.value, {
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => { 
+        console.log(data.results[0].joke)
+        jokes.textContent = data.results[0].joke; 
+    });
+})
 
+function mapJokes(joe){
+    joe.forEach((element) => {
+        const markup= `<li>${element.joke}</li>`;
+        document.getElementById('jokess').insertAdjacentElement("beforeend", markup)
+
+    }
+)};
 
 }
 
