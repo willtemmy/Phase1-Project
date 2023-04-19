@@ -71,14 +71,6 @@ searchForm.addEventListener("submit", (e) => {
     });
 })
 
-function mapJokes(joe){
-    joe.forEach((element) => {
-        const markup= `<li>${element.joke}</li>`;
-        document.getElementById('jokess').insertAdjacentElement("beforeend", markup)
-
-    }
-)};
-
 }
 
 document.addEventListener("DOMContentLoaded", init)
